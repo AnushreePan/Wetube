@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Wetube/static/css/main.3061216b.css",
-    "main.js": "/Wetube/static/js/main.8815330f.js",
+    "main.js": "/Wetube/static/js/main.2e26699c.js",
     "static/media/Avtar.jpg": "/Wetube/static/media/Avtar.6e06902ebff1e8d9b3d1.jpg",
     "static/media/Youtube_logo.png": "/Wetube/static/media/Youtube_logo.6f214736c83d297b8398.png",
     "index.html": "/Wetube/index.html",
     "main.3061216b.css.map": "/Wetube/static/css/main.3061216b.css.map",
-    "main.8815330f.js.map": "/Wetube/static/js/main.8815330f.js.map"
+    "main.2e26699c.js.map": "/Wetube/static/js/main.2e26699c.js.map"
   },
   "entrypoints": [
     "static/css/main.3061216b.css",
-    "static/js/main.8815330f.js"
+    "static/js/main.2e26699c.js"
   ]
 }
