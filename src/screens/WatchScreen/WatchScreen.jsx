@@ -24,7 +24,7 @@ const WatchScreen = () => {
       dispatch(getRelatedVideos(id))
    }, [dispatch, id])
 
-   const { videos } = useSelector(
+   const { videos , loading: relatedVideosLoading } = useSelector(
       state => state.relatedVideos
    )
 
