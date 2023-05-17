@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Wetube/static/css/main.98fd653d.css",
+    "main.js": "/Wetube/static/js/main.d63cb2a5.js",
+    "static/media/Youtube_logo.png": "/Wetube/static/media/Youtube_logo.6f214736c83d297b8398.png",
+    "index.html": "/Wetube/index.html",
+    "main.98fd653d.css.map": "/Wetube/static/css/main.98fd653d.css.map",
+    "main.d63cb2a5.js.map": "/Wetube/static/js/main.d63cb2a5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.98fd653d.css",
+    "static/js/main.d63cb2a5.js"
+  ]
+}
