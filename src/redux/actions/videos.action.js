@@ -65,7 +65,7 @@ export const getVideosByCategory = keyword => async (dispatch, getState) => {
             maxResults: 20,
             pageToken: getState().homeVideos.nextPageToken,
             q: keyword,
-            type: 'video',
+            type: '',
          },
       })
 

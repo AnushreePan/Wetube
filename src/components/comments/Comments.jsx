@@ -4,10 +4,18 @@ import {
    addComment,
    getCommentsOfVideoById,
 } from '../../redux/actions/comments.action'
+import avtar from '../../Images/Avtar.jpg'
 import Comment from '../comment/Comment'
 import './Comments.scss'
 
 const Comments = ({ videoId,totalComments }) => {
+   const [text,setText] = useState('')
+
+  const handleComment =(e)=>{
+    e.preventDefault()
+    if(text.length===0) return
+    dispatch(addComment(videoId,text))
+  }
 
    const dispatch = useDispatch()
 
@@ -18,29 +26,17 @@ dispatch(getCommentsOfVideoById(videoId))
    }, [videoId, dispatch])
 
    const comments = useSelector(state=>state.commentList.comments)
-   const { photoURL } = useSelector(state => state.auth?.user)
-
-const [text,setText] = useState("")
 
 
 const Comments = comments?.map(comment=>comment.snippet.topLevelComment.snippet)
 
-
-   const handleComment = (e) => {
-      e.preventDefault();
-      if(text.length === 0) return
-
-dispatch(addComment(videoId,text))
-setText('')
-
-   }
 
    return (
       <div className='comments'>
          <p>{totalComments} Comments</p>
          <div className='my-2 comments__form d-flex w-100'>
             <img
-               src={photoURL}
+               src={avtar}
                alt='avtar'
                className='mr-3 rounded-circle'
             />
@@ -56,9 +52,9 @@ setText('')
             </form>
          </div>
          <div className='comments__list'>
-           {Comments?.map((comment,i) => (
+           {Comments?.map((comment,i) =>
               <Comment comment={comment} key={i} />
-           ))}
+           )}
          </div>
       </div>
    )
